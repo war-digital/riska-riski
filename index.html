@@ -10,8 +10,10 @@
     <meta property="og:description" content="Sabtu, 17 Oktober 2026 - Dusun Baru Mekar, Desa Abbajareng, Kec. Dampal Selatan, Kab. Tolitoli">
     <meta property="og:image" content="sampul.jpg">
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <!-- Brittany Signature Font -->
     <link href="https://fonts.cdnfonts.com/css/brittany-signature" rel="stylesheet">
@@ -29,9 +31,11 @@
                     },
                     fontFamily: {
                         vibes: ['Great Vibes', 'cursive'],
+                        alex: ['Alex Brush', 'cursive'],
+                        cormorant: ['Cormorant Garamond', 'serif'],
                         playfair: ['Playfair Display', 'serif'],
                         poppins: ['Poppins', 'sans-serif'],
-                        brittany: ['Brittany Signature', 'cursive'],
+                        brittany: ['Brittany Signature', 'Alex Brush', 'cursive'],
                     }
                 }
             }
@@ -118,7 +122,6 @@
 
         .font-playfair {
             font-family: 'Playfair Display', serif;
-            font-weight: 700;
             letter-spacing: 0.02em;
         }
 
@@ -129,8 +132,17 @@
         }
 
         .font-brittany {
-            font-family: 'Brittany Signature', cursive;
+            font-family: 'Brittany Signature', 'Alex Brush', cursive;
             font-weight: normal;
+        }
+
+        .font-cormorant {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            letter-spacing: 0.03em;
+        }
+
+        .font-alex {
+            font-family: 'Alex Brush', cursive;
         }
 
         /* Readable text helpers */
@@ -562,16 +574,16 @@
                         The Wedding Of
                     </p>
 
-                    <h1 class="font-Tan Pearl text-6xl leading-none text-white drop-shadow-2xl animate-view zoom-in">
+                    <h1 class="font-brittany text-7xl md:text-8xl leading-tight text-white drop-shadow-2xl animate-view zoom-in">
                         Riska
                     </h1>
 
-                    <div class="text-gold text-3xl my-2 animate-view fade-in delay-100">
+                    <div class="text-gold text-4xl my-2 font-vibes animate-view fade-in delay-100">
                         &
                     </div>
 
                     <h1
-                        class="font-Tan Pearl text-6xl leading-none text-white drop-shadow-2xl animate-view zoom-in delay-200">
+                        class="font-brittany text-7xl md:text-8xl leading-tight text-white drop-shadow-2xl animate-view zoom-in delay-200">
                         Riski
                     </h1>
 
@@ -605,14 +617,14 @@
                 <div class="animate-view morph-rise text-center z-10 flex flex-col items-center justify-center h-full">
                     <h3 class="font-poppins text-xs tracking-[0.2em] mb-2 uppercase text-readable-sub">The Wedding Of
                     </h3>
-                    <h1 class="font-Tan Pearl text-5xl text-readable my-3 drop-shadow-sm">Riska & Riski</h1>
+                    <h1 class="font-brittany text-5xl md:text-6xl text-readable my-3 drop-shadow-sm">Riska & Riski</h1>
 
                     <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-gold shadow-xl my-6 photo-ring">
                         <img src="sampul.jpg" alt="Prewedding"
                             class="w-full h-full object-cover grayscale-[10%] brightness-90">
                     </div>
 
-                    <p class="font-playfair text-lg text-readable mb-4 font-semibold animate-view zoom-in delay-100">
+                    <p class="font-cormorant text-2xl text-readable mb-4 font-semibold italic animate-view zoom-in delay-100">
                         Sabtu, 17 Oktober 2026</p>
 
                     <!-- Countdown Timer -->
@@ -677,7 +689,7 @@
                                     The Bride
                                 </p>
 
-                                <h2 class="font-Tan Pearl text-4xl md:text-5xl leading-tight">
+                                <h2 class="font-cormorant text-4xl md:text-5xl font-bold leading-tight tracking-wide">
                                     Riska, S.Pd
                                 </h2>
 
@@ -711,7 +723,7 @@
                                     The Groom
                                 </p>
 
-                                <h2 class="font-Tan Pearl text-4xl md:text-5xl leading-tight">
+                                <h2 class="font-cormorant text-4xl md:text-5xl font-bold leading-tight tracking-wide">
                                     Riski Rismawan
                                 </h2>
 
@@ -729,7 +741,7 @@
             <!-- SLIDE 3: SCHEDULE -->
             <section id="schedule" class="slide-section px-6 py-12" data-bg="2">
                 <div class="animate-view morph-rise text-center mb-8 mt-10">
-                    <h2 class="font-Tan Pearl text-4xl text-readable mb-2 glass-text-bold">Rangkaian Acara</h2>
+                    <h2 class="font-cormorant text-4xl md:text-5xl font-bold text-readable mb-2 glass-text-bold tracking-wide">Rangkaian Acara</h2>
                     <p class="font-playfair text-xs text-black" style="text-shadow: 0 0 2px rgba(255,255,255,0.8);">
                         Kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.</p>
                 </div>
@@ -738,7 +750,7 @@
 
                     <div class="timeline-item">
                         <div class="card-modern p-5 shadow-lg animate-view slide-left delay-200">
-                            <h3 class="font-playfair font-bold text-lg text-gold-dark mb-1">Akad Nikah</h3>
+                            <h3 class="font-cormorant font-bold text-2xl text-gold-dark mb-1">Akad Nikah</h3>
                             <p class="text-xs mb-1 text-black"><i class="far fa-calendar-alt text-gold mr-2"></i> Sabtu, 17 Oktober 2026</p>
                             <p class="text-xs mb-1 text-black"><i class="far fa-clock text-gold mr-2"></i> 10.00 WITA - Selesai</p>
                             <p class="text-xs text-black"><i class="fas fa-map-marker-alt text-gold mr-2"></i> Lokasi: Dusun Baru Mekar, Desa Abbajareng, Kec. Dampal Selatan, Kab. Tolitoli</p>
@@ -746,7 +758,7 @@
                     </div>
                     <div class="timeline-item">
                         <div class="card-modern p-5 shadow-lg animate-view slide-left delay-300">
-                            <h3 class="font-playfair font-bold text-lg text-gold-dark mb-1">Resepsi</h3>
+                            <h3 class="font-cormorant font-bold text-2xl text-gold-dark mb-1">Resepsi</h3>
                             <p class="text-xs mb-1 text-black"><i class="far fa-calendar-alt text-gold mr-2"></i> Sabtu (Malam minggu), 17 Oktober 2026</p>
                             <p class="text-xs mb-1 text-black"><i class="far fa-clock text-gold mr-2"></i> 19.00 WITA - Selesai</p>
                             <p class="text-xs text-black"><i class="fas fa-map-marker-alt text-gold mr-2"></i> Lokasi: Dusun Baru Mekar, Desa Abbajareng, Kec. Dampal Selatan, Kab. Tolitoli</p>
@@ -767,7 +779,7 @@
             <!-- SLIDE 4: GIFT -->
             <section id="gift" class="slide-section px-6 py-12" data-bg="1">
                 <div class="animate-view morph-rise text-center mb-8 mt-10">
-                    <h2 class="font-brittany text-4xl text-readable mb-2 glass-text-bold">Wedding Gift</h2>
+                    <h2 class="font-brittany text-5xl text-readable mb-2 glass-text-bold">Wedding Gift</h2>
                     <p class="font-playfair text-xs text-readable-sub glass-text">Doa Restu Anda sangat berarti. Tanda
                         kasih secara cashless dapat disalurkan melalui:</p>
                 </div>
@@ -806,7 +818,7 @@
             <!-- SLIDE 5: WISHES & FOOTER -->
             <section id="wishes" class="slide-section px-6 py-12 pb-24" data-bg="2">
                 <div class="animate-view morph-rise text-center mb-6 mt-10">
-                    <h2 class="font-brittany text-4xl text-readable mb-2 glass-text-bold">Kirim Ucapan</h2>
+                    <h2 class="font-brittany text-5xl text-readable mb-2 glass-text-bold">Kirim Ucapan</h2>
                     <p class="font-playfair text-xs text-readable-sub glass-text">"Dan di antara tanda-tanda
                         (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu
                         cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."
@@ -854,7 +866,7 @@
 
                 <!-- Footer embedded in last slide -->
                 <div class="text-center mt-auto animate-view morph-rise delay-200">
-                    <h2 class="font-brittany text-4xl text-readable mb-4">Thank You</h2>
+                    <h2 class="font-brittany text-5xl text-readable mb-4">Thank You</h2>
 
                     <div class="card-modern p-4 shadow-lg max-w-[260px] mx-auto mt-2 mb-4">
                         <p class="text-[10px] text-black font-medium mb-1">Undangan Digital Dibuat Oleh</p>
